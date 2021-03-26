@@ -3,7 +3,8 @@ Saved Model and Tensorflow.js layer formats
 
 Source: https://medium.com/swlh/build-custom-object-detection-web-application-using-tensorflow-js-d1664f96a18b
 
-1. Index.html:  Import **TensorFlow.js 3.3.0** and define the video stream.
+1. Atom is the complete folder structure for the app (converted and saved_model folders are just the .pb and .json file repository)
+2. Index.html:  Import **TensorFlow.js 3.3.0** and define the video stream.
 *Note: use the same TensorFlow.js version to convert the model and run in web app. I used 3.3.0 for the model conversion to layer formats from inference graph.
 2. Load the detection model: we use **tf.loadGraphModel** to load files stored in the web_model folder in an async manner (**script.js **: Line 64)
    Image size set to 320 --> Line: 91
