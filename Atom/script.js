@@ -64,7 +64,7 @@ function enableCam(event) {
 
 
 var model = undefined;
-model_url = 'https://raw.githubusercontent.com/KostaMalsev/ImageRecognition/master/model/mobile_netv2/web_model2/model.json';
+model_url = 'https://raw.githubusercontent.com/Anishauday/DetectionModel/main/Atom/model/mobile_netv2/web_model2/model.json';
 //Call load function
 asyncLoadModel(model_url);
 
