@@ -88,9 +88,9 @@ function predictWebcamTF() {
         window.requestAnimationFrame(predictWebcamTF);
     });
 }
-const imageSize = 512;
+const imageSize = 320;
 //Match prob. threshold for object detection:
-var classProbThreshold = 0.4;//40%
+var classProbThreshold = 0.5;//50%
 //Image detects object that matches the preset:
 async function detectTFMOBILE(imgToPredict) {
 
@@ -140,8 +140,8 @@ function renderPredictionBoxes (predictionBoxes, predictionClasses, predictionSc
         const score = predictionScores[i * 3] * 100;
 const width_ = (maxX-minX).toFixed(0);
         const height_ = (maxY-minY).toFixed(0);
-//If confidence is above 70%
-        if (score > 70 && score < 100){
+//If confidence is above 50%
+        if (score > 50 && score < 100){
             const highlighter = document.createElement('div');
             highlighter.setAttribute('class', 'highlighter');
             highlighter.style = 'left: ' + minX + 'px; ' +
